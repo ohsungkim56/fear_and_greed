@@ -6,4 +6,4 @@ DB_HOST = os.getenv("DB_HOST", "NO POSTGRES HOST SET")
 DB_USER = os.getenv("DB_USER", "NO POSTGRES USER SET")
 DB_PASSWORD = os.getenv("DB_PASSWORD", "NO POSTGRES PASSWORD SET")
 
-engine = create_engine(f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/", echo=False)
+engine = create_engine(f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/postgres", echo=False)
